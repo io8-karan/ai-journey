@@ -1,0 +1,15 @@
+# seperate odd and even in two lisat
+list=[]
+even_list=[]
+odd_list=[]
+num=int(input("enter:"))
+for i in range(num):
+     list.append(int(input("enter the no. in list:")))
+print(list)
+for i in list:
+     if i%2==0:
+       even_list.append(i)
+     else:
+         odd_list.append(i)
+print(even_list)
+print(odd_list)         
