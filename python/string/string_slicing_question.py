@@ -53,7 +53,7 @@ new7=str1.removesuffix("n")
 print("Removed Suffix String is:",new7)
 
 #swap fo first and last bit
-
+    
 new8=str1[-1]+str1[1:-1]+str1[0]
 print("First and Last Character Interchanged String is:",new8)
 new8=str1[-2:]+str1[2:-2]+str1[0:2]
