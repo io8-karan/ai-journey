@@ -1,0 +1,171 @@
+University Management System
+
+Design a University Management System using Python OOP.
+
+Your program should demonstrate all five types of inheritance:
+
+✅ Single Inheritance
+✅ Multilevel Inheritance
+✅ Multiple Inheritance
+✅ Hierarchical Inheritance
+✅ Hybrid Inheritance
+Requirements
+1. Base Class
+
+Create a class named Person.
+
+Attributes
+name
+age
+gender
+Methods
+display_info()
+introduce()
+2. Single Inheritance
+
+Create a class Student that inherits from Person.
+
+Additional Attributes
+roll_number
+course
+semester
+Methods
+study()
+show_student_details()
+3. Multilevel Inheritance
+
+Create a class GraduateStudent that inherits from Student.
+
+Additional Attributes
+research_topic
+guide_name
+Methods
+research()
+thesis_submission()
+4. Hierarchical Inheritance
+
+From the same parent class (Person), create two more child classes.
+
+Teacher
+
+Attributes
+
+employee_id
+subject
+salary
+
+Methods
+
+teach()
+evaluate_students()
+Staff
+
+Attributes
+
+department
+duty
+
+Methods
+
+work()
+attendance()
+5. Multiple Inheritance
+
+Create another independent class called Sports.
+
+Attributes
+sport_name
+medals
+Methods
+practice()
+participate()
+
+Now create a class
+
+SportsStudent
+
+which inherits from
+
+Student
+Sports
+Methods
+display_sports_profile()
+6. Hybrid Inheritance
+
+Create another class
+
+TeachingAssistant
+
+that inherits from
+
+GraduateStudent
+Teacher
+
+This class should represent a student who is also teaching.
+
+Additional Attribute
+lab_name
+Methods
+conduct_lab()
+assist_professor()
+Constructor Requirements
+
+Use constructors (__init__) properly.
+
+Every child class should initialize the required parent class attributes using super() or direct parent-class constructor calls where appropriate.
+
+Method Overriding
+
+Override the introduce() method in
+
+Student
+Teacher
+GraduateStudent
+TeachingAssistant
+
+Each class should introduce itself differently.
+
+Use super()
+
+Use super() wherever applicable.
+
+Method Resolution Order (MRO)
+
+Print the MRO for
+
+SportsStudent
+TeachingAssistant
+
+using
+
+ClassName.mro()
+
+or
+
+help(ClassName)
+Create Objects
+
+Create objects of
+
+Person
+Student
+GraduateStudent
+Teacher
+Staff
+SportsStudent
+TeachingAssistant
+
+Call every method at least once.
+
+Output Should Demonstrate
+
+Your program should clearly show:
+
+Constructor chaining
+Method overriding
+Use of super()
+Multiple inheritance
+Hybrid inheritance
+MRO
+Access to parent methods
+Access to grandparent methods
