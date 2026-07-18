@@ -1,0 +1,16 @@
+# # Question 2
+# # Create
+# # BankAccount
+# # Parent
+# # Account
+# # Child
+# # SavingAccount
+# # Requirements
+# # constructor
+# # super()
+# # overriding
+# # Magic method
+# # __str__
+# # Output
+# # Account Holder : Rahul
+# # Balance : 5000
