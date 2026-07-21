@@ -1,4 +1,4 @@
-# vowel or consonant (wrong way - for learning)
+# vowel or consonant (OLD way 
 
 char = input("Enter a character: ")
 if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u' or char == 'A' or char == 'E' or char == 'I' or char == 'O' or char == 'U':
@@ -6,7 +6,7 @@ if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u' or ch
 else:
     print("char is consonant")
 
-#wrong approach
+
 # right way
 
 char = str(input("Enter a character: "))
