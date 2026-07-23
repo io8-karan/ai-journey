@@ -1,7 +1,6 @@
-Hello Java    
+Hello Java
 Welcome to File HAndling
 Learning NonStops
 You Are my Hero
 hello world
-Hello Python
 Hello Python
