@@ -1,0 +1,105 @@
+Reading & Writing (1–20)
+Create a text file.
+Write a single line to a file.
+Write multiple lines to a file.
+Read the entire file.
+Read the first line only.
+Read all lines into a list.
+Count the number of lines.
+Count the number of words.
+Count the number of characters.
+Append a new line.
+Overwrite file contents.
+Copy one file to another.
+Merge two files.
+Display file size.
+Display the current file position (tell()).
+Move the cursor using seek().
+Read after using seek().
+Open a file using with.
+Close a file manually.
+Check whether a file exists.
+Searching (21–40)
+Search for a word.
+Search for multiple words.
+Count occurrences of a word.
+Find the longest line.
+Find the shortest line.
+Find the longest word.
+Find the shortest word.
+Display duplicate lines.
+Display unique lines.
+Find empty lines.
+Count blank lines.
+Count uppercase letters.
+Count lowercase letters.
+Count digits.
+Count vowels.
+Count consonants.
+Count special characters.
+Display lines containing a keyword.
+Search ignoring case.
+Replace one word with another.
+File Management (41–60)
+Rename a file.
+Delete a file.
+Create a folder.
+Delete a folder.
+Rename a folder.
+List all files.
+List only .txt files.
+List only .py files.
+Count total files.
+Count total folders.
+Find the largest file.
+Find the smallest file.
+Display file extensions.
+Count files by extension.
+Display hidden files.
+Copy all .txt files.
+Move files to another folder.
+Delete all empty files.
+Find recently modified files.
+Display file permissions.
+Working with Multiple Files (61–80)
+Read all .txt files.
+Merge all .txt files.
+Count total words across files.
+Count total lines across files.
+Count total characters across files.
+Find the largest text file by size.
+Find the smallest text file by size.
+Search a word in all files.
+Find which file contains the most words.
+Find which file contains the fewest words.
+Display duplicate filenames.
+Compare two files.
+Check if two files are identical.
+Display common lines.
+Display different lines.
+Remove duplicate lines from a file.
+Sort file contents alphabetically.
+Reverse file contents.
+Number every line.
+Remove empty lines.
+Advanced Practice (81–100)
+Create a file backup.
+Restore a backup.
+Encrypt a text file (simple Caesar cipher).
+Decrypt the file.
+Compress a file into ZIP.
+Extract a ZIP file.
+Read a CSV file.
+Write a CSV file.
+Read a JSON file.
+Write a JSON file.
+Log errors to a file.
+Create a simple notes app.
+Create a student record file system.
+Build a contact book using files.
+Create a to-do list app.
+Count the frequency of every word.
+Display the top 10 most common words.
+Find the longest sentence.
+Find duplicate files by content.
+Build a mini file explorer using os and pathlib
