@@ -1,0 +1,217 @@
+Level-Up Project: Smart Hospital Management System
+Scenario
+
+A hospital wants software to manage doctors, patients, appointments, billing, and medical records.
+
+Design the system using proper OOP principles.
+
+Requirements
+1. Abstraction
+
+Create an abstract class:
+
+Person
+
+Abstract methods
+
+login()
+display_profile()
+
+Doctor and Patient must implement these methods.
+
+2. Inheritance
+Person
+     |
+---------------------
+|                   |
+Doctor          Patient
+
+Both inherit common data.
+
+3. Polymorphism
+
+Create
+
+show_dashboard(person)
+
+When passed
+
+Doctor
+
+it shows doctor's dashboard.
+
+When passed
+
+Patient
+
+it shows patient's dashboard.
+
+Same function.
+
+Different behavior.
+
+4. Composition
+
+Every patient has
+
+MedicalRecord
+
+If Patient is deleted
+
+↓
+
+MedicalRecord is also deleted.
+
+Example
+
+Patient
+   |
+MedicalRecord
+
+MedicalRecord cannot exist without Patient.
+
+5. Aggregation
+
+Hospital stores doctors.
+
+Doctor can leave Hospital.
+
+Hospital deleted?
+
+Doctor still exists.
+
+Hospital -----> Doctor
+6. Association
+
+Doctor treats Patient.
+
+Neither owns the other.
+
+Doctor <-------> Patient
+
+Doctor can treat many patients.
+
+Patient can visit many doctors.
+
+7. Encapsulation
+
+Keep
+
+medical history
+salary
+password
+
+private.
+
+Use
+
+__variable
+8. Property Decorator
+
+Patient
+
+age
+
+cannot become
+
+-5
+
+Use
+
+@property
+@age.setter
+
+Validate.
+
+Doctor
+
+experience
+
+Cannot be negative.
+
+Again use property.
+
+9. Decorator
+
+Create your own decorator
+
+@log_activity
+
+Whenever these methods run
+
+book_appointment()
+
+cancel_appointment()
+
+generate_bill()
+
+Decorator prints
+
+[LOG]
+Method Name
+Current Time
+Finished Successfully
+
+No logging code inside these methods.
+
+10. Bill
+
+Create
+
+Bill
+
+Use property
+
+amount
+
+Cannot be negative.
+
+11. Extra Polymorphism
+
+Create
+
+Payment
+
+Method
+
+pay()
+
+Implement
+
+CashPayment
+
+CardPayment
+
+UPIPayment
+
+Hospital simply calls
+
+payment.pay()
+
+without checking payment type.
+
+12. Appointment
+
+Each appointment contains
+
+Doctor
+
+Patient
+
+Date
+
+Time
+
+Hospital stores all appointments.
+
+13. Bonus Challenge (Optional)
+
+Implement a singleton-like class (or another suitable design) so that only one Hospital object should exist in the program.
+
+Constraints
+❌ No global variables.
+❌ No copy-paste code between Doctor and Patient.
+❌ No direct access to private variables from outside the class.
+❌ Don't use dictionaries for everything—model the system with classes.
+✅ Use meaningful methods.
+✅ Follow good OOP design.
