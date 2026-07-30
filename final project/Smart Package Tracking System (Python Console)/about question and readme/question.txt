@@ -1,0 +1,383 @@
+Project: Smart Package Tracking System (Python Console)
+Technologies (Current Knowledge Only)
+
+✅ OOP
+
+✅ File Handling
+
+✅ Regex
+
+✅ Collections
+
+✅ Itertools
+
+✅ Datetime
+
+✅ Enum
+
+✅ UUID
+
+✅ Generators
+
+✅ Function Caching
+
+✅ Type Hints
+
+❌ No Database
+
+❌ No Threading
+
+❌ No Flask
+
+Real Problem
+
+Suppose you own a courier company like Amazon, Delhivery, Blue Dart, or DTDC.
+
+Customers ask:
+
+"Where is my package?"
+
+The system should answer.
+
+Step 1 — Customer Places Order
+
+Customer enters
+
+Name : Rahul Sharma
+
+Phone : 9876543210
+
+Email : rahul@gmail.com
+
+Address : Bathinda
+Concepts Used
+
+Regex
+
+Validate
+
+Phone
+Email
+Pincode
+Step 2 — Generate Tracking ID
+
+Instead of
+
+Order 1
+
+Generate
+
+PKG-4ef2a7d9
+
+Concept
+
+uuid.uuid4()
+Step 3 — Package Status
+
+Status should never be
+
+ship
+
+shipping
+
+Shiped
+
+Create
+
+class Status(Enum):
+    ORDER_PLACED = 1
+    PACKED = 2
+    SHIPPED = 3
+    OUT_FOR_DELIVERY = 4
+    DELIVERED = 5
+    CANCELLED = 6
+Step 4 — Save Order Date
+
+When customer books
+
+25 July 2026
+10:20 AM
+
+Use
+
+datetime.now()
+
+Later show
+
+Booked
+
+25 Jul 2026
+
+10:20 AM
+Step 5 — Delivery Estimate
+
+Today
+
+25 Jul
+
+Delivery takes
+
+5 days
+
+Use
+
+timedelta(days=5)
+
+Output
+
+Expected Delivery
+
+30 Jul
+Step 6 — Track Package
+
+Customer enters
+
+Tracking ID
+
+Program searches
+
+orders.txt
+
+Shows
+
+Current Status
+
+SHIPPED
+
+Current Location
+
+Ludhiana Hub
+Step 7 — Delivery History
+
+Every status change
+
+ORDER_PLACED
+
+↓
+
+PACKED
+
+↓
+
+SHIPPED
+
+↓
+
+OUT FOR DELIVERY
+
+↓
+
+DELIVERED
+
+Store in
+
+history.txt
+Step 8 — Collections
+Counter
+
+Find
+
+Today's Deliveries
+
+Delhi
+
+140
+
+Punjab
+
+82
+
+UP
+
+60
+defaultdict
+
+Store
+
+City
+
+↓
+
+Packages
+
+Example
+
+Delhi
+
+PKG1
+
+PKG2
+
+PKG3
+deque
+
+Recent tracking searches
+
+PKG123
+
+PKG456
+
+PKG789
+
+Keep only last 10.
+
+Step 9 — Itertools
+
+Generate Delivery Slots
+
+Drivers
+
+Aman
+
+Rahul
+
+Simran
+
+Vehicles
+
+Bike
+
+Van
+
+Using
+
+product()
+
+Result
+
+Aman Bike
+
+Aman Van
+
+Rahul Bike
+
+Rahul Van
+
+Generate Queue Numbers
+
+count(1000)
+
+Result
+
+1000
+
+1001
+
+1002
+
+Rotate Drivers
+
+Driver A
+
+Driver B
+
+Driver C
+
+Use
+
+cycle()
+
+Show only today's first 20 packages
+
+islice()
+Step 10 — Generator
+
+Suppose
+
+orders.txt
+
+contains
+
+500000 packages
+
+Don't do
+
+readlines()
+
+Instead
+
+yield
+
+One package at a time.
+
+Step 11 — Function Cache
+
+Many users search
+
+PKG1001
+
+Instead of opening file every time
+
+Use
+
+@lru_cache
+
+Now
+
+First search
+
+↓
+
+Read file
+
+↓
+
+Cache
+
+Second search
+
+↓
+
+Instant
+
+Step 12 — Reports
+
+Generate
+
+Today's Orders
+
+Today's Delivered
+
+Today's Cancelled
+
+Average Delivery Time
+
+Pending Orders
+Project Structure
+tracking_system/
+│
+├── main.py
+├── package.py
+├── customer.py
+├── tracking.py
+├── reports.py
+├── validators.py
+├── utils.py
+│
+├── orders.txt
+├── history.txt
+└── config.py
+OOP Classes
+Customer
+
+Package
+
+TrackingSystem
+
+TrackingHistory
+
+ReportGenerator
+Skills Covered
+Topic	Used In
+OOP	Customer, Package, TrackingSystem classes
+File Handling	Store orders and tracking history
+Exception Handling	Invalid tracking ID, file errors
+Regex	Validate email, phone, tracking ID
+UUID	Generate unique tracking ID
+Enum	Package status
+Datetime	Booking, updates, expected delivery
+Collections	Counter, deque, defaultdict
+Itertools	Driver assignment, queue numbers
+Generators	Read large order files efficiently
+Function Caching	Cache repeated tracking searches
+Type Hints	Improve code readability and editor support
