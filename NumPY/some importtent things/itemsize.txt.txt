@@ -1,0 +1,18 @@
+| NumPy Data Type | Description                 | Size (`itemsize`) |
+| --------------- | --------------------------- | ----------------: |
+| `np.int8`       | Integer (-128 to 127)       |            1 byte |
+| `np.uint8`      | Unsigned integer (0 to 255) |            1 byte |
+| `np.int16`      | Integer                     |           2 bytes |
+| `np.uint16`     | Unsigned integer            |           2 bytes |
+| `np.int32`      | Integer                     |           4 bytes |
+| `np.uint32`     | Unsigned integer            |           4 bytes |
+| `np.int64`      | Integer                     |           8 bytes |
+| `np.uint64`     | Unsigned integer            |           8 bytes |
+| `np.float16`    | Half precision decimal      |           2 bytes |
+| `np.float32`    | Single precision decimal    |           4 bytes |
+| `np.float64`    | Double precision decimal    |           8 bytes |
+| `np.complex64`  | Complex number              |           8 bytes |
+| `np.complex128` | Complex number              |          16 bytes |
+| `np.bool_`      | True/False                  |            1 byte |
+| `np.str_`       | Unicode string              | Depends on length |
+| `np.bytes_`     | Byte string                 | Depends on length |
