@@ -16,3 +16,31 @@
 | `np.bool_`      | True/False                  |            1 byte |
 | `np.str_`       | Unicode string              | Depends on length |
 | `np.bytes_`     | Byte string                 | Depends on length |
+
+
+
+
+| Operation    | Syntax                         |
+| ------------ | ------------------------------ |
+| Greater than | `arr[arr > x]`                 |
+| Less than    | `arr[arr < x]`                 |
+| Equal        | `arr[arr == x]`                |
+| Not equal    | `arr[arr != x]`                |
+| AND          | `(cond1) & (cond2)`            |
+| OR           | `(cond1) \| (cond2)`           |
+| NOT          | `~(condition)`                 |
+| Logical AND  | `np.logical_and(cond1, cond2)` |
+| Logical OR   | `np.logical_or(cond1, cond2)`  |
+| Logical NOT  | `np.logical_not(condition)`    |
+
+
+
+| Function       | New Object | New Memory | Shares Memory | `base`         |
+| -------------- | ---------- | ---------- | ------------- | -------------- |
+| Original Array | ✅          | ✅          | ❌             | `None`         |
+| `copy()`       | ✅          | ✅          | ❌             | `None`         |
+| `view()`       | ✅          | ❌          | ✅             | Original Array |
+| Slice          | ✅          | ❌          | ✅             | Original Array |
+| `reshape()`    | ✅          | Usually ❌  | Usually ✅     | Original Array |
+| `flatten()`    | ✅          | ✅          | ❌             | `None`         |
+| `ravel()`      | ✅          | Usually ❌  | Usually ✅     | Original Array |
