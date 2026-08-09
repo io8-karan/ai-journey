@@ -44,3 +44,12 @@
 | `reshape()`    | ✅          | Usually ❌  | Usually ✅     | Original Array |
 | `flatten()`    | ✅          | ✅          | ❌             | `None`         |
 | `ravel()`      | ✅          | Usually ❌  | Usually ✅     | Original Array |
+
+
+
+|                              | `copy()` | `view()` |
+| ---------------------------- | -------- | -------- |
+| New array object?            | ✅        | ✅        |
+| Same underlying data/memory? | ❌        | ✅        |
+| New array change → original? | ❌        | ✅        |
+| Original change → new array? | ❌        | ✅        |
